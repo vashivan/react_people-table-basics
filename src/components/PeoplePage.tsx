@@ -17,7 +17,7 @@ export default function PeoplePage() {
         setPeople(data);
       })
       .catch(() => {
-        setErrorMsg('There are no people on the server');
+        setErrorMsg('Something went wrong. Try again later.');
       })
       .finally(() => {
         setLoading(false);
